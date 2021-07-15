@@ -38,7 +38,7 @@ const infoOrgaoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    criadoEm: {
+    createdIn: {
         type: Date,
         required: true,
         default: new Date

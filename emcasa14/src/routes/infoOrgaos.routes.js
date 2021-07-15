@@ -4,9 +4,9 @@ const router = express.Router();
 const controller = require('../controllers/infoOrgaosController');
 
 router.get('/listaTodosOsOrgaos', controller.listAllOrgaos);
-router.get('/procuraPorCidade', controller.findOrgaoByFilter);
+router.get('/procuraPorFiltro', controller.findOrgaoByFilter);
 router.post('/registrarOrgao', controller.createrNewOrgao);
-router.get('/:id', controller.listAllOrgaos);
+router.get('/:id', controller.listOrgaoById);
 router.delete('/:id', controller.deleteOrgaoPublico);
 router.patch('/:id', controller.updateOrgaoPublico);
 
