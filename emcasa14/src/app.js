@@ -14,5 +14,10 @@ app
 .use('/orgaos', orgaosRoutes)
 .use('/orgaos/informacoes', infoOrgaosRoutes)
 
+app.get("/", (req, resp) => {
+    resp.status(200).json([{
+        "mensagem": "Bem vindo(a) ao InfoParalegal"
+    }])
+})
 
 module.exports = app;
